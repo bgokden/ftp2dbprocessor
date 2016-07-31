@@ -1,0 +1,14 @@
+version: '2'
+services:
+  taskqueue:
+    image: rabbitmq:3-management
+  observer:
+    image: berkgokden/ftpprocessor
+    command: observer -ftpserver ${FTPSERVER} -ftpusername ${FTPUSERNAME} -ftppassword ${FTPPASSWORD} -ftpdirectory ${FTPDIRECTORY} -amqpserver taskqueue
+    depends_on:
+        - taskqueue
+  worker:
+    image: berkgokden/ftpprocessor
+    command: worker -ftpserver ${FTPSERVER} -ftpusername ${FTPUSERNAME} -ftppassword ${FTPPASSWORD} -ftpdirectory ${FTPDIRECTORY} -amqpserver taskqueue -elasticsearchhost ${ELASTICSEARCHHOST}
+    depends_on:
+        - taskqueue

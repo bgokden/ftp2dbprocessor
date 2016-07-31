@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jul 31 17:51:45 UTC 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0156-4215-4368-00000bdec860 
+on database directory /tmp/1469987504287-0/derbystore/default/default  with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/home/developer/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_72-b15
+user.dir=/home/developer/ftp2dbprocessor
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Jul 31 17:51:47 UTC 2016:
+Shutting down instance a816c00e-0156-4215-4368-00000bdec860 on database directory /tmp/1469987504287-0/derbystore/default/default with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
